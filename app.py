@@ -130,8 +130,56 @@ def inject_css():
         .foot { color:#6E7188; font-size:0.82rem; text-align:center; margin-top:2rem;
             padding-top:1rem; border-top:1px solid rgba(255,255,255,0.06); }
 
-        #MainMenu, footer, header { visibility: hidden; }
+        /* Ocultar menú y footer, pero NO el header (ahí vive el control del sidebar) */
+        #MainMenu, footer { visibility: hidden; }
+        header[data-testid="stHeader"] { background: transparent; }
+
+        /* Hacer MUY visible la flecha nativa para colapsar/expandir el sidebar */
+        [data-testid="stSidebarCollapseButton"],
+        [data-testid="stSidebarCollapsedControl"],
+        [data-testid="collapsedControl"] {
+            display: flex !important; visibility: visible !important; opacity: 1 !important;
+            z-index: 1000000 !important;
+        }
+        [data-testid="stSidebarCollapsedControl"] button,
+        [data-testid="collapsedControl"] button {
+            background: linear-gradient(135deg, #7C6CFF, #38E1C6) !important;
+            border-radius: 10px !important; color: #0A0B10 !important;
+            box-shadow: 0 4px 18px rgba(124,108,255,0.5) !important;
+        }
+        [data-testid="stSidebarCollapsedControl"] svg,
+        [data-testid="collapsedControl"] svg { color: #0A0B10 !important; fill: #0A0B10 !important; }
+
+        /* Botón flotante propio de respaldo para reabrir el panel */
+        .reopen-fab {
+            position: fixed; top: 14px; left: 14px; z-index: 1000001;
+            background: linear-gradient(135deg, #7C6CFF, #38E1C6); color: #0A0B10;
+            border: none; border-radius: 12px; padding: 8px 14px; cursor: pointer;
+            font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem;
+            box-shadow: 0 4px 18px rgba(124,108,255,0.5); display: none;
+        }
+        .reopen-fab:hover { filter: brightness(1.08); }
         </style>
+
+        <button class="reopen-fab" id="reopenSidebar"
+            onclick="const b=window.parent.document.querySelector('[data-testid=stSidebarCollapsedControl] button, [data-testid=collapsedControl] button'); if(b) b.click();">
+            ☰ Menú
+        </button>
+        <script>
+        (function(){
+            const doc = window.parent.document;
+            const fab = doc.getElementById('reopenSidebar');
+            function sync(){
+                const sb = doc.querySelector('[data-testid=stSidebar]');
+                // Mostrar el botón flotante solo cuando el sidebar está colapsado
+                const collapsed = !sb || sb.getAttribute('aria-expanded') === 'false'
+                    || (sb && sb.offsetWidth < 50);
+                if (fab) fab.style.display = collapsed ? 'block' : 'none';
+            }
+            setInterval(sync, 400);
+            sync();
+        })();
+        </script>
         """,
         unsafe_allow_html=True,
     )
@@ -307,6 +355,8 @@ def main():
         )
         st.divider()
         st.caption("Datos sintéticos calibrados · 18 meses · 6 verticales")
+        st.caption("💡 Si ocultas este panel, usa el botón **☰ Menú** "
+                   "(arriba a la izquierda) para volver a abrirlo.")
 
     # Aplicar filtros
     m_ini = pd.to_datetime(rango[0], format="%b %Y")
@@ -555,3 +605,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+  
