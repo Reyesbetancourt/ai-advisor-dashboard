@@ -399,7 +399,7 @@ def main():
             mode="lines", line=dict(color=CYAN, width=3),
             fill="tozeroy", fillcolor="rgba(56,225,198,0.10)"))
         fig.update_layout(title="Carga operativa: manual vs. liberada por IA")
-        st.plotly_chart(style_fig(fig, 400), use_container_width=True)
+        st.plotly_chart(style_fig(fig, 400), width='stretch')
 
     with col_b:
         total_ahorradas = df["horas_ahorradas"].sum()
@@ -420,7 +420,7 @@ def main():
             marker=dict(colors=[SECTOR_COLORS.get(s, VIOLET) for s in by_sector["sector"]]),
             textinfo="percent"))
         fig_d.update_layout(title="Horas liberadas por sector")
-        st.plotly_chart(style_fig(fig_d, 260, legend=True), use_container_width=True)
+        st.plotly_chart(style_fig(fig_d, 260, legend=True), width='stretch')
 
     # ------------------------------------------------------------------
     # STORYTELLING 2: Crecimiento de ingresos y clientes
@@ -447,7 +447,7 @@ def main():
         labels={"ingresos_mxn": "Ingresos (MXN)", "mes": ""},
     )
     fig_area.update_layout(title="Ingresos mensuales apilados por vertical")
-    st.plotly_chart(style_fig(fig_area, 420), use_container_width=True)
+    st.plotly_chart(style_fig(fig_area, 420), width='stretch')
 
     # ------------------------------------------------------------------
     # STORYTELLING 3: Matriz de casos de uso (impacto vs esfuerzo)
@@ -475,7 +475,7 @@ def main():
     fig_bub.update_layout(title="Portafolio de casos de uso de IA")
     fig_bub.update_xaxes(range=[0.5, 9.8])
     fig_bub.update_yaxes(range=[4.5, 9.8])
-    st.plotly_chart(style_fig(fig_bub, 440), use_container_width=True)
+    st.plotly_chart(style_fig(fig_bub, 440), width='stretch')
 
     top = casos_f.sort_values("roi_score", ascending=False).iloc[0]
     st.markdown(
@@ -504,7 +504,7 @@ def main():
                     "nps": "Satisfacción del cliente (NPS)"},
         )
         fig_sc.update_layout(title="Automatización vs. satisfacción")
-        st.plotly_chart(style_fig(fig_sc, 400), use_container_width=True)
+        st.plotly_chart(style_fig(fig_sc, 400), width='stretch')
 
     with col_y:
         section("", "Mi stack de IA", "")
@@ -519,7 +519,7 @@ def main():
         ))
         fig_bar.update_layout(title="Nivel de dominio por herramienta")
         fig_bar.update_xaxes(range=[0, 108])
-        st.plotly_chart(style_fig(fig_bar, 360, legend=False), use_container_width=True)
+        st.plotly_chart(style_fig(fig_bar, 360, legend=False), width='stretch')
 
     # ------------------------------------------------------------------
     # Cierre / tabla de detalle
@@ -542,7 +542,7 @@ def main():
             "% Auto": "{:.0f}%",
             "NPS": "{:.0f}",
         }),
-        use_container_width=True, hide_index=True,
+        width='stretch', hide_index=True,
     )
 
     st.markdown(
