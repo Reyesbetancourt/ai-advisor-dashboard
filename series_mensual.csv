@@ -1,0 +1,109 @@
+vertical_id,vertical,sector,mes,adopcion_ia,horas_manuales,horas_ahorradas,clientes_activos,ingresos_mxn,pct_automatizado,nps,ticket_mxn
+UEGE,Clínica de Gastroenterología,Salud,2025-01-01,False,133.0,1.7,122,353448.0,1.2,57.1,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-02-01,False,136.9,0.0,123,363229.0,0.0,59.5,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-03-01,False,138.2,0.0,127,370041.0,2.2,56.8,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-04-01,False,131.8,3.0,126,356108.0,0.0,60.0,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-05-01,False,128.2,6.6,131,361867.0,5.4,55.9,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-06-01,False,133.9,0.9,131,356907.0,3.3,62.1,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-07-01,False,140.8,0.0,135,378139.0,0.0,56.4,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-08-01,False,137.4,0.0,135,369252.0,0.0,56.1,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-09-01,True,125.9,8.9,154,420225.0,5.3,67.9,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-10-01,True,116.3,18.5,173,481003.0,22.7,70.4,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-11-01,True,99.4,35.4,208,578158.0,34.8,71.9,2800
+UEGE,Clínica de Gastroenterología,Salud,2025-12-01,True,80.8,54.0,236,661891.0,50.4,82.9,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-01-01,True,72.9,61.9,253,699107.0,59.8,78.4,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-02-01,True,64.6,70.2,273,787142.0,69.3,81.0,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-03-01,True,62.7,72.1,275,805025.0,75.2,83.7,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-04-01,True,59.8,75.0,291,816300.0,70.8,89.7,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-05-01,True,61.5,73.3,291,825487.0,72.1,84.0,2800
+UEGE,Clínica de Gastroenterología,Salud,2026-06-01,True,63.3,71.5,288,843314.0,71.2,84.0,2800
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-01-01,False,141.9,0.0,135,710757.0,0.5,54.2,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-02-01,False,137.7,0.0,139,743492.0,0.0,54.8,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-03-01,False,141.0,0.0,143,734922.0,5.6,56.9,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-04-01,False,138.5,0.0,140,713088.0,4.6,59.5,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-05-01,True,127.9,8.2,158,827248.0,8.5,59.5,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-06-01,True,114.3,21.8,181,928600.0,21.2,68.4,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-07-01,True,101.9,34.3,218,1140714.0,38.9,75.1,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-08-01,True,83.4,52.8,261,1319883.0,48.4,77.6,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-09-01,True,72.6,63.6,274,1452740.0,61.6,78.3,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-10-01,True,62.2,73.9,288,1567542.0,58.7,81.7,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-11-01,True,61.8,74.4,290,1473034.0,66.9,86.1,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2025-12-01,True,62.3,73.9,298,1579642.0,72.3,85.7,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-01-01,True,61.0,75.2,301,1610143.0,75.2,83.4,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-02-01,True,59.8,76.4,320,1646295.0,74.9,87.5,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-03-01,True,58.4,77.7,308,1597309.0,82.6,83.2,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-04-01,True,61.7,74.5,333,1810635.0,77.6,83.4,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-05-01,True,59.2,76.9,333,1701040.0,68.6,89.9,5200
+PATRIMONIO,Gestión de Activos Familiares,Fintech,2026-06-01,True,63.4,72.7,342,1740528.0,79.7,86.1,5200
+BGREAT,Coworking Dental,Salud,2025-01-01,False,131.8,4.6,98,332811.0,0.0,60.3,3400
+BGREAT,Coworking Dental,Salud,2025-02-01,False,136.4,0.0,102,337475.0,4.5,56.9,3400
+BGREAT,Coworking Dental,Salud,2025-03-01,False,140.2,0.0,102,336736.0,1.1,60.3,3400
+BGREAT,Coworking Dental,Salud,2025-04-01,False,140.1,0.0,98,326340.0,0.3,59.1,3400
+BGREAT,Coworking Dental,Salud,2025-05-01,False,132.4,4.0,104,345778.0,0.1,59.2,3400
+BGREAT,Coworking Dental,Salud,2025-06-01,False,133.3,3.1,108,372972.0,3.1,56.5,3400
+BGREAT,Coworking Dental,Salud,2025-07-01,False,136.3,0.1,107,367892.0,3.5,59.1,3400
+BGREAT,Coworking Dental,Salud,2025-08-01,True,128.4,8.0,124,424895.0,8.8,61.5,3400
+BGREAT,Coworking Dental,Salud,2025-09-01,True,112.8,23.6,140,479729.0,13.2,62.2,3400
+BGREAT,Coworking Dental,Salud,2025-10-01,True,96.9,39.5,163,548029.0,35.2,73.1,3400
+BGREAT,Coworking Dental,Salud,2025-11-01,True,85.2,51.2,193,658532.0,51.8,77.9,3400
+BGREAT,Coworking Dental,Salud,2025-12-01,True,70.3,66.1,197,645768.0,58.5,88.9,3400
+BGREAT,Coworking Dental,Salud,2026-01-01,True,62.7,73.7,207,735945.0,78.7,91.1,3400
+BGREAT,Coworking Dental,Salud,2026-02-01,True,61.8,74.6,227,812014.0,73.5,82.1,3400
+BGREAT,Coworking Dental,Salud,2026-03-01,True,61.9,74.5,223,780593.0,75.3,86.9,3400
+BGREAT,Coworking Dental,Salud,2026-04-01,True,61.7,74.7,218,771621.0,67.2,86.4,3400
+BGREAT,Coworking Dental,Salud,2026-05-01,True,64.1,72.3,239,834313.0,66.1,88.4,3400
+BGREAT,Coworking Dental,Salud,2026-06-01,True,58.4,78.0,226,755519.0,72.3,88.0,3400
+BARBER,Sistema para Barberías,Servicios,2025-01-01,False,104.0,0.0,62,24766.0,6.1,60.1,380
+BARBER,Sistema para Barberías,Servicios,2025-02-01,False,102.2,0.0,63,23806.0,0.0,56.5,380
+BARBER,Sistema para Barberías,Servicios,2025-03-01,False,101.2,0.7,63,24299.0,0.1,62.4,380
+BARBER,Sistema para Barberías,Servicios,2025-04-01,True,95.4,6.6,71,27882.0,9.3,64.3,380
+BARBER,Sistema para Barberías,Servicios,2025-05-01,True,87.2,14.8,78,29176.0,20.5,63.6,380
+BARBER,Sistema para Barberías,Servicios,2025-06-01,True,73.6,28.3,91,33672.0,35.5,74.7,380
+BARBER,Sistema para Barberías,Servicios,2025-07-01,True,63.3,38.6,113,41696.0,52.8,79.3,380
+BARBER,Sistema para Barberías,Servicios,2025-08-01,True,50.4,51.6,123,48633.0,70.1,82.9,380
+BARBER,Sistema para Barberías,Servicios,2025-09-01,True,48.6,53.3,129,48185.0,67.5,81.5,380
+BARBER,Sistema para Barberías,Servicios,2025-10-01,True,48.4,53.6,128,50588.0,67.8,86.1,380
+BARBER,Sistema para Barberías,Servicios,2025-11-01,True,47.2,54.7,131,51643.0,68.5,84.0,380
+BARBER,Sistema para Barberías,Servicios,2025-12-01,True,48.0,53.9,138,54958.0,70.9,84.9,380
+BARBER,Sistema para Barberías,Servicios,2026-01-01,True,47.0,54.9,136,52132.0,69.9,90.7,380
+BARBER,Sistema para Barberías,Servicios,2026-02-01,True,47.2,54.8,134,52227.0,70.2,82.2,380
+BARBER,Sistema para Barberías,Servicios,2026-03-01,True,43.7,58.3,141,52766.0,70.4,77.3,380
+BARBER,Sistema para Barberías,Servicios,2026-04-01,True,46.0,56.0,143,52723.0,71.1,85.0,380
+BARBER,Sistema para Barberías,Servicios,2026-05-01,True,47.9,54.0,142,56016.0,67.7,89.1,380
+BARBER,Sistema para Barberías,Servicios,2026-06-01,True,44.6,57.4,143,52404.0,79.4,88.7,380
+RENTAS,Administración de Rentas,Real Estate,2025-01-01,False,98.7,1.4,196,2891035.0,1.1,55.8,14500
+RENTAS,Administración de Rentas,Real Estate,2025-02-01,False,99.9,0.3,196,2825948.0,0.0,59.5,14500
+RENTAS,Administración de Rentas,Real Estate,2025-03-01,False,104.4,0.0,208,2914045.0,7.4,57.6,14500
+RENTAS,Administración de Rentas,Real Estate,2025-04-01,False,101.1,0.0,207,3051007.0,1.7,60.6,14500
+RENTAS,Administración de Rentas,Real Estate,2025-05-01,True,96.7,3.5,237,3481289.0,8.5,54.6,14500
+RENTAS,Administración de Rentas,Real Estate,2025-06-01,True,84.4,15.7,257,3571111.0,21.6,64.8,14500
+RENTAS,Administración de Rentas,Real Estate,2025-07-01,True,74.2,25.9,306,4545836.0,41.8,67.1,14500
+RENTAS,Administración de Rentas,Real Estate,2025-08-01,True,62.3,37.8,372,5350444.0,53.4,77.0,14500
+RENTAS,Administración de Rentas,Real Estate,2025-09-01,True,51.9,48.2,389,5682942.0,66.0,83.0,14500
+RENTAS,Administración de Rentas,Real Estate,2025-10-01,True,48.2,51.9,432,6146451.0,65.5,89.7,14500
+RENTAS,Administración de Rentas,Real Estate,2025-11-01,True,44.0,56.1,449,6764585.0,69.3,91.6,14500
+RENTAS,Administración de Rentas,Real Estate,2025-12-01,True,43.5,56.6,457,6388553.0,73.5,85.0,14500
+RENTAS,Administración de Rentas,Real Estate,2026-01-01,True,44.3,55.8,445,6407083.0,77.6,83.9,14500
+RENTAS,Administración de Rentas,Real Estate,2026-02-01,True,46.5,53.6,454,6458607.0,72.3,82.8,14500
+RENTAS,Administración de Rentas,Real Estate,2026-03-01,True,43.8,56.3,464,6810234.0,74.9,90.4,14500
+RENTAS,Administración de Rentas,Real Estate,2026-04-01,True,43.7,56.4,472,6738719.0,72.5,85.7,14500
+RENTAS,Administración de Rentas,Real Estate,2026-05-01,True,46.1,54.0,461,6427102.0,73.9,91.7,14500
+RENTAS,Administración de Rentas,Real Estate,2026-06-01,True,47.0,53.1,478,6755933.0,69.5,86.5,14500
+CRIPTO,Trading de Criptomonedas,Fintech,2025-01-01,False,136.4,1.4,40,78189.0,0.0,55.0,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-02-01,False,135.5,2.4,42,83332.0,0.0,57.5,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-03-01,False,142.6,0.0,41,77289.0,0.0,55.0,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-04-01,False,132.0,5.9,44,79829.0,0.0,51.1,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-05-01,False,132.8,5.1,43,83014.0,4.3,58.4,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-06-01,False,142.4,0.0,44,85941.0,0.0,55.1,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-07-01,False,133.2,4.6,45,84920.0,3.4,58.9,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-08-01,False,131.8,6.1,44,83196.0,0.0,62.5,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-09-01,True,132.7,5.2,50,95354.0,12.2,57.5,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-10-01,True,118.0,19.9,59,113425.0,21.9,62.2,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-11-01,True,96.1,41.8,69,136831.0,31.5,68.7,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2025-12-01,True,81.2,56.7,79,158483.0,55.1,72.7,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-01-01,True,74.2,63.7,87,173107.0,65.6,80.6,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-02-01,True,67.3,70.6,88,168030.0,70.3,81.4,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-03-01,True,64.0,73.9,93,183864.0,77.2,84.4,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-04-01,True,64.2,73.7,94,174725.0,70.8,81.8,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-05-01,True,64.5,73.4,98,180401.0,64.5,88.6,1900
+CRIPTO,Trading de Criptomonedas,Fintech,2026-06-01,True,62.8,75.1,99,191742.0,72.0,84.7,1900

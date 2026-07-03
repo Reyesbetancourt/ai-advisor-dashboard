@@ -1,0 +1,9 @@
+herramienta,funcion,dominio_pct,frecuencia
+Claude (LLM),Razonamiento / Estrategia,95,Diario
+Python + pandas,Análisis de datos,88,Diario
+Supabase,Backend / Base de datos,82,Diario
+n8n,Automatización de flujos,70,Semanal
+Plotly / Streamlit,Visualización,78,Semanal
+React + TypeScript,Frontend de sistemas,85,Diario
+LightGBM / ML,Modelos predictivos,55,Mensual
+OCR + Vision,Ingesta de documentos,48,Semanal

@@ -1,0 +1,18 @@
+vertical_id,caso_uso,categoria,impacto,esfuerzo,horas_mes_ahorradas,vertical,roi_score
+UEGE,Agendado inteligente de estudios,Operaciones,8,3,42,Clínica de Gastroenterología,112.0
+UEGE,Ingesta de documentos clínicos (OCR+LLM),Documentación,9,6,55,Clínica de Gastroenterología,82.5
+UEGE,Resúmenes de historia clínica,Clínico,7,4,30,Clínica de Gastroenterología,52.5
+PATRIMONIO,Motor de reglas fiscales por estado,Cumplimiento,9,8,60,Gestión de Activos Familiares,67.5
+PATRIMONIO,Clasificación automática de activos,Datos,8,5,48,Gestión de Activos Familiares,76.8
+PATRIMONIO,Alertas de vencimientos y renovaciones,Riesgo,7,3,25,Gestión de Activos Familiares,58.3
+BGREAT,Optimización de ocupación de sillones,Operaciones,8,4,38,Coworking Dental,76.0
+BGREAT,Facturación CFDI automatizada,Finanzas,9,5,52,Coworking Dental,93.6
+BGREAT,Recordatorios y no-shows,Retención,6,2,22,Coworking Dental,66.0
+BARBER,Reservas por WhatsApp con IA,Ventas,8,3,28,Sistema para Barberías,74.7
+BARBER,Predicción de demanda por barbero,Analítica,6,5,18,Sistema para Barberías,21.6
+RENTAS,Screening de inquilinos,Riesgo,8,6,44,Administración de Rentas,58.7
+RENTAS,Cobranza y conciliación automática,Finanzas,9,5,58,Administración de Rentas,104.4
+RENTAS,Redacción asistida de contratos,Legal,7,4,33,Administración de Rentas,57.8
+CRIPTO,Señales cuantitativas asistidas por IA,Analítica,9,9,40,Trading de Criptomonedas,40.0
+CRIPTO,Gestión de riesgo y stop dinámico,Riesgo,8,7,35,Trading de Criptomonedas,40.0
+CRIPTO,Cumplimiento LFPIORPI (actividad vulnerable),Cumplimiento,8,8,30,Trading de Criptomonedas,30.0
