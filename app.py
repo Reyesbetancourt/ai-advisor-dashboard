@@ -207,19 +207,24 @@ horas_sem = dfp["horas_liberadas_sem"].sum()
 horas_horizonte = horas_sem * weeks
 valor_horizonte = horas_horizonte * rate
 
-# --- HERO ---
-st.markdown('<div class="rise d1"><div class="eyebrow">Especialidad en IA · Visualización de Datos</div></div>', unsafe_allow_html=True)
-st.markdown('<div class="rise d2"><div class="hero-title">La IA como <span class="hl">sistema operativo</span><br>del asesor de negocios</div></div>', unsafe_allow_html=True)
+# --- HERO (gancho narrativo: el techo de horas) ---
+st.markdown('<div class="rise d1"><div class="eyebrow">Especialidad en IA · Visualización de Datos · Reyes Betancourt</div></div>', unsafe_allow_html=True)
+st.markdown('<div class="rise d2"><div class="hero-title">Un asesor solo puede escalar<br><span class="hl">de una manera</span></div></div>', unsafe_allow_html=True)
 st.markdown(
-    '<div class="rise d3"><div class="hero-sub">No asesoro desde la teoría: <b>construyo sistemas completos</b>. '
-    'La IA es la capa que me lleva de la estrategia a la entrega técnica de punta a punta —arquitectura, código y operación— '
-    'sin un equipo grande. En el centro está <b>Orey AI</b>: un copiloto que orquesta seis ventures y se replica dentro de cada uno.</div></div>',
+    '<div class="rise d3"><div class="hero-sub">Un asesor tradicional tiene un techo: <b>sus propias horas</b>. '
+    'Yo diseño y opero <b>seis negocios a la vez</b> —de una clínica de gastroenterología a una agencia de viajes— sin un equipo grande. '
+    'La pregunta que responde este tablero es simple: <b>¿cómo?</b> La respuesta es la IA como apalancamiento, '
+    'y un copiloto llamado <b>Orey</b> que convierte cada negocio en un sistema que aprende.</div></div>',
+    unsafe_allow_html=True)
+st.markdown(
+    f'<div class="rise d3"><div style="color:{MUTED};font-size:.86rem;margin-top:.6rem;font-style:italic">'
+    f'Para mis profesores y compañeros: esto es <b style="color:{TEXT}">cómo trabajo</b> — el método, no solo el resultado.</div></div>',
     unsafe_allow_html=True)
 st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
 
 k1, k2, k3, k4 = st.columns(4)
 kpis = [
-    (k1, f"{len(dfp)}", "ventures activos", "6 verticales de negocio"),
+    (k1, f"{len(dfp)}", "ventures en paralelo", "operados por una persona"),
     (k2, f"{horas_sem:,.0f} h", "liberadas / semana", "según tus supuestos"),
     (k3, f"${valor_horizonte/1e6:,.2f} M", f"valor en {weeks} sem", "capacidad estratégica recuperada"),
     (k4, "1", "copiloto transversal", "Orey, replicable en cada venture"),
@@ -231,18 +236,29 @@ for col, v, l, f in kpis:
         unsafe_allow_html=True)
 
 st.markdown(
-    f'<div class="rise d5"><div class="insight" style="margin-top:1rem">Con tus supuestos actuales '
-    f'(<b>{global_accel:.1f}×</b> de aceleración, <b>${rate:,} MXN/h</b>), la IA te libera <b>{horas_sem:,.0f} h/semana</b>. '
-    f'En {weeks} semanas son <b>{horas_horizonte:,.0f} horas</b> que dejas de gastar en trabajo operativo y reinviertes en estrategia — '
-    f'el retorno real de la IA no es el software, es el <b>tiempo del experto</b>. Ajusta los deslizadores en el panel para ver cómo cambia.</div></div>',
+    f'<div class="rise d5"><div class="insight" style="margin-top:1rem">La tesis en una línea: '
+    f'<b>la IA no me da opiniones, me da apalancamiento</b>. Con tus supuestos actuales '
+    f'(<b>{global_accel:.1f}×</b> de aceleración, <b>${rate:,} MXN/h</b>), libera <b>{horas_sem:,.0f} h/semana</b> — '
+    f'en {weeks} semanas, <b>{horas_horizonte:,.0f} horas</b> que dejo de gastar en trabajo operativo y reinvierto en estrategia. '
+    f'Ese es el techo que la IA rompe. Ajusta los deslizadores del panel y velo cambiar.</div></div>',
     unsafe_allow_html=True)
 
-# --- 01 EL MÉTODO ---
+# --- 01 · EL PROBLEMA (la pregunta) ---
 st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
-st.markdown('<div class="eyebrow">01 · El método</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-h">Mi pipeline con IA</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">01 · El problema</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">El techo del asesor tradicional</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-p">Un consultor vende horas. Más clientes = más horas = más gente que contratar. '
+            'Ese modelo no escala para una sola persona con seis frentes abiertos. '
+            'Mi apuesta: <b>no vender horas, construir sistemas</b> — y usar la IA para acelerar cada etapa de esa construcción.</div>', unsafe_allow_html=True)
+st.write("")
+
+# --- 02 · MI RESPUESTA: EL MÉTODO ---
+st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">02 · Mi respuesta · el método</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">El pipeline con IA como apalancamiento</div>', unsafe_allow_html=True)
 st.markdown('<div class="sec-p">Cada proyecto recorre las mismas seis etapas. La IA no reemplaza el criterio: '
-            'acelera cada tramo y me deja validar más rápido. El pico está en la generación asistida.</div>', unsafe_allow_html=True)
+            'multiplica lo que produzco en cada tramo y me deja validar más rápido. El pico está en la generación asistida — '
+            'y justo por eso la etapa siguiente (corrección/validación) es donde pongo el ojo humano.</div>', unsafe_allow_html=True)
 st.write("")
 
 fig_pipe = go.Figure()
@@ -257,12 +273,13 @@ fig_pipe.add_trace(go.Scatter(
 fig_pipe.update_yaxes(range=[0, 108], title="Intervención de IA (%)")
 st.plotly_chart(style_fig(fig_pipe, 330), use_container_width=True)
 
-# --- 02 PORTAFOLIO ---
+# --- 03 · LA PRUEBA: PORTAFOLIO ---
 st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
-st.markdown('<div class="eyebrow">02 · Dónde lo aplico</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-h">Portafolio de ventures</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-p">Seis proyectos, una misma arquitectura de IA por debajo. '
-            'Algunos en producción, otros en plan: el método es el mismo. Pasa el cursor sobre cada tarjeta.</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">03 · La prueba · dónde vive el método</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">Seis ventures reales, una arquitectura</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-p">El método no es teoría: vive en seis negocios. '
+            'Algunos en producción, otros en plan — pero todos comparten el mismo pipeline con IA por debajo. '
+            'Pasa el cursor sobre cada tarjeta para ver el rol concreto de la IA.</div>', unsafe_allow_html=True)
 st.write("")
 
 cols = st.columns(3)
@@ -279,28 +296,48 @@ for i, row in dfp.reset_index(drop=True).iterrows():
             unsafe_allow_html=True)
         st.write("")
 
-# --- 03 OPERACIÓN EN DATOS ---
+# --- 03b · LA PRUEBA EN DATOS ---
 st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
-st.markdown('<div class="eyebrow">03 · La operación en datos</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-h">Mi portafolio, en gráficas</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-p">Datos reales del portafolio. La cuarta gráfica usa tu modelo de impacto: '
-            'se recalcula al mover los deslizadores del panel.</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">03 · La prueba · en datos</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">Lo que el método produce, medido</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-p">Datos reales del portafolio. La última gráfica usa mi modelo de impacto: '
+            'se recalcula al mover los deslizadores del panel — el razonamiento es visible, no un número mágico.</div>', unsafe_allow_html=True)
 st.write("")
 
 c1, c2 = st.columns(2)
 with c1:
     st.markdown(f'<div style="color:{TEXT};font-weight:600;margin-bottom:.3rem">Ventures por vertical</div>', unsafe_allow_html=True)
     vc = dfp["vertical"].value_counts().reset_index(); vc.columns = ["vertical","n"]
+    vc = vc.sort_values("n")
     f1 = px.bar(vc, x="n", y="vertical", orientation="h", color="vertical", color_discrete_sequence=PLOT_SEQ)
     f1.update_layout(xaxis=dict(dtick=1, title=""), yaxis=dict(title=""))
     st.plotly_chart(style_fig(f1, 280), use_container_width=True)
 with c2:
-    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin-bottom:.3rem">Fase de madurez</div>', unsafe_allow_html=True)
-    ph = dfp["phase"].value_counts().reset_index(); ph.columns = ["phase","n"]
+    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin-bottom:.3rem">Fase de madurez <span style="color:{MUTED};font-weight:400">(6 ventures)</span></div>', unsafe_allow_html=True)
+    # Barra apilada horizontal única: posición sobre eje común (Bertin/Cleveland-McGill) > dona.
+    order = ["Producción","Desarrollo","Plan"]
     cmap = {"Producción":GREEN,"Desarrollo":BLUE,"Plan":AMBER}
-    f2 = px.pie(ph, values="n", names="phase", hole=0.62, color="phase", color_discrete_map=cmap)
-    f2.update_traces(textposition="inside", textinfo="label+value", insidetextorientation="horizontal")
-    st.plotly_chart(style_fig(f2, 280), use_container_width=True)
+    counts = dfp["phase"].value_counts()
+    f2 = go.Figure()
+    for ph in order:
+        n = int(counts.get(ph, 0))
+        if n == 0:
+            continue
+        f2.add_trace(go.Bar(
+            y=["ventures"], x=[n], orientation="h", name=ph,
+            marker=dict(color=cmap[ph]), text=[f"{ph} · {n}"], textposition="inside",
+            insidetextanchor="middle", textfont=dict(color=INK, size=13, family="Inter")))
+    f2.update_layout(barmode="stack", showlegend=False,
+                     xaxis=dict(title="", showticklabels=False, range=[0, len(dfp)]),
+                     yaxis=dict(title="", showticklabels=False))
+    st.plotly_chart(style_fig(f2, 130), use_container_width=True)
+    st.markdown(
+        f'<div style="color:{MUTED};font-size:.82rem;line-height:1.5;margin-top:.2rem">'
+        f'<span style="color:{GREEN}">●</span> Producción &nbsp; '
+        f'<span style="color:{BLUE}">●</span> Desarrollo &nbsp; '
+        f'<span style="color:{AMBER}">●</span> Plan &nbsp;— '
+        f'la mitad del portafolio ya corre o está en construcción; el resto es pipeline con arquitectura definida.</div>',
+        unsafe_allow_html=True)
 
 c3, c4 = st.columns(2)
 with c3:
@@ -311,7 +348,7 @@ with c3:
     f3.update_layout(coloraxis_showscale=False, xaxis=dict(title=""), yaxis=dict(title="proyectos", dtick=1))
     st.plotly_chart(style_fig(f3, 300), use_container_width=True)
 with c4:
-    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin:.4rem 0 .3rem">Horas liberadas por venture / semana <span style="color:{MUTED};font-weight:400">(tu modelo)</span></div>', unsafe_allow_html=True)
+    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin:.4rem 0 .3rem">Horas liberadas por venture / semana <span style="color:{MUTED};font-weight:400">(mi modelo)</span></div>', unsafe_allow_html=True)
     hb = dfp.sort_values("horas_liberadas_sem")
     f4 = go.Figure(go.Bar(
         x=hb["horas_liberadas_sem"], y=hb["name"], orientation="h",
@@ -321,13 +358,42 @@ with c4:
     f4.update_layout(xaxis=dict(title="", range=[0, hb["horas_liberadas_sem"].max()*1.25]), yaxis=dict(title=""))
     st.plotly_chart(style_fig(f4, 300), use_container_width=True)
 
-# --- 04 EL SISTEMA OREY ---
+# --- 04 · CÓMO USO GENAI (validación crítica) ---
+st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">04 · Uso estratégico de GenAI</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">No acepto lo que la IA escupe. Lo audito.</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-p">La IA acelera, pero el criterio es mío. Uso GenAI para <b>explorar alternativas</b>, '
+            '<b>refinar</b> arquitectura y diseño, y generar código — y siempre lo <b>evalúo críticamente</b> antes de aceptarlo. '
+            'La validación humana no es un paso opcional: es lo que separa un sistema que funciona de uno que parece funcionar.</div>', unsafe_allow_html=True)
+st.write("")
+
+g1, g2, g3 = st.columns(3)
+genai_steps = [
+    (g1, "Explorar", VIOLET, "Genero varias alternativas de arquitectura y las comparo, en vez de casarme con la primera idea."),
+    (g2, "Refinar", BLUE, "Itero prompts y diseño con la IA hasta que el output encaja con las restricciones reales del proyecto."),
+    (g3, "Validar", GREEN, "Reviso, corrijo y verifico cada salida. La IA propone; yo decido qué entra a producción."),
+]
+for col, title, c, desc in genai_steps:
+    col.markdown(
+        f'<div class="card" style="border-left:3px solid {c}"><div class="name" style="color:{c};font-size:1.05rem">{title}</div>'
+        f'<div class="desc" style="min-height:auto">{desc}</div></div>', unsafe_allow_html=True)
+
+st.write("")
+st.markdown(
+    f'<div class="insight" style="border-left-color:{GREEN}">'
+    f'<b style="color:{GREEN}">Evidencia real de validación crítica:</b> en <b>UEGE</b>, un prompt de generación '
+    f'produjo un esquema con <b>más de 20 errores</b>. No lo acepté: lo audité, corregí y lo llevé a una '
+    f'<b>versión 3 verificada</b> antes de tocar producción. Ese es el trabajo que la IA <i>no</i> hace sola — '
+    f'y es exactamente donde está mi valor como asesor.</div>',
+    unsafe_allow_html=True)
+
+# --- 05 EL MULTIPLICADOR: OREY ---
 st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
-st.markdown('<div class="eyebrow">04 · La tesis · sección estrella</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-h">Orey AI: un copiloto con disciplina de conocimiento</div>', unsafe_allow_html=True)
-st.markdown('<div class="sec-p">Orey no es un chatbot: es un grafo de conocimiento gobernado. '
-            'Los aprendizajes no se vierten, se <b>promueven</b> por un pipeline auditable. '
-            'Eso convierte cada venture en un sistema que aprende.</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">05 · El multiplicador · sección estrella</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">Orey AI: de usar IA a construir un sistema que aprende</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-p">Aquí subo de nivel. No solo <i>uso</i> IA en cada proyecto: construí <b>Orey</b>, '
+            'un grafo de conocimiento gobernado donde los aprendizajes no se vierten, se <b>promueven</b> por un pipeline auditable. '
+            'Eso convierte cada venture en un sistema que aprende — y ese aprendizaje se reutiliza en los demás.</div>', unsafe_allow_html=True)
 st.write("")
 
 st.markdown(f"""
@@ -408,6 +474,41 @@ links = [
     {"source":"cap-cta","target":"l-cta","rel":"SOURCED_FROM"},
 ]
 orey_graph(nodes, links, height=560)
+
+# --- CIERRE: vuelta a la tesis + limitaciones honestas (ethos) ---
+st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">Cierre</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-h">Un asesor solo puede escalar de una manera</div>', unsafe_allow_html=True)
+st.markdown(
+    f'<div class="orey-band" style="margin-top:.6rem">'
+    f'<p style="color:{TEXT};font-size:1.02rem;line-height:1.65;margin:0 0 .6rem">'
+    f'Empecé con una pregunta: <b style="color:{CYAN}">¿cómo opera una sola persona seis negocios a la vez?</b> '
+    f'La respuesta recorrió este tablero — el método, la prueba, la validación crítica, y Orey como multiplicador. '
+    f'El hilo que une todo es uno solo: <b style="color:{CYAN}">la IA no me da opiniones, me da apalancamiento</b>. '
+    f'Rompe el techo de horas que limita al asesor tradicional y me deja llevar la estrategia hasta el sistema que la ejecuta.</p>'
+    f'<p style="color:{TEXT};font-size:.98rem;line-height:1.6;margin:0">'
+    f'Y eso es, exactamente, <b style="color:{TEXT}">lo que puedo construir para un negocio</b>: no una recomendación, un sistema que opera y aprende.</p>'
+    f'</div>',
+    unsafe_allow_html=True)
+
+st.write("")
+lc1, lc2 = st.columns([1, 1])
+with lc1:
+    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin-bottom:.3rem">Honestidad sobre los límites</div>', unsafe_allow_html=True)
+    st.markdown(
+        f'<div style="color:{MUTED};font-size:.88rem;line-height:1.6">'
+        f'• <b style="color:{TEXT}">3 de 6 ventures</b> están en fase de plan, no en producción. Lo muestro tal cual.<br>'
+        f'• El <b style="color:{TEXT}">modelo de impacto</b> usa mis supuestos (tarifa, aceleración); son ajustables en vivo, no verdades absolutas.<br>'
+        f'• Las horas liberadas son <b style="color:{TEXT}">estimaciones fundamentadas</b>, no medición instrumentada — todavía.</div>',
+        unsafe_allow_html=True)
+with lc2:
+    st.markdown(f'<div style="color:{TEXT};font-weight:600;margin-bottom:.3rem">Lo que sigue</div>', unsafe_allow_html=True)
+    st.markdown(
+        f'<div style="color:{MUTED};font-size:.88rem;line-height:1.6">'
+        f'• Instrumentar horas reales por venture para reemplazar supuestos con datos medidos.<br>'
+        f'• Incorporar un asistente tipo Orey <b style="color:{TEXT}">dentro</b> de cada venture.<br>'
+        f'• Promover los primeros <span style="color:{VIOLET}">learnings</span> reales a <span style="color:{GREEN}">patterns</span> canónicos.</div>',
+        unsafe_allow_html=True)
 
 # --- FOOTER ---
 st.markdown('<div class="rule-soft"></div>', unsafe_allow_html=True)
